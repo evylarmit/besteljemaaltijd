@@ -12,31 +12,7 @@ html {
     box-sizing: border-box;
     background-color: white;
   }
-  body nav {
-    position: sticky;
-    top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    padding: 20px;
-    background: #4b4b4bff;
-    margin: 0;
-  }
-  li {
-    list-style: none;
-    margin-right: 20px;
-    font-size: 25px;
-    font-weight: bold;
-  }
-  li a {
-    text-decoration: none;
-    color: white;
-  }
+
   section {
     height: 100vh;
     display: grid;
@@ -60,4 +36,44 @@ html {
   width: 100%;
   bottom: 47px;
   position: fixed;
+}
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #4b4b4bff;
+  padding: 5px 10px;
+  padding-left: 100px;
+  padding-right: 200px;
+  margin-bottom: 0;
+}
+#header-logo {
+  height: 65px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header-right a:after {
+  display: block;
+  content: ""; 
+  height: 3px; 
+  width: 0%;
+  background-color: #f30000; 
+  transition: width 0.4s ease-in-out; 
+  }
+  
+  .header-right a:hover:after,
+  .header-right a:focus:after {
+  width: 100%;
+  }
+.header-right {
+  float: right;
 }
