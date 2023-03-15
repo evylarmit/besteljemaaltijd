@@ -14,18 +14,43 @@ html {
   }
 
   section {
-    height: 100vh;
+    height: 80vh;
     display: grid;
-    place-items: center;
-    font-size: 50px;
-    font-weight: bold;
+    justify-content: center;
+    align-items: start;
+    font-size: 30px;
     background: #eee;
+    padding-top: 25px;
+    justify-items: center;
+  }
+  section img {
+    width: 1000px;
+  }
+  section p {
+    font-weight: none;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  section h2 {
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #f30000;
+  }
+  #third {
+    height: 200%;
+    align-content: center;
+  }
+  #fourth {
+    height: 20vh;
   }
   footer {
     background-color: black;
-    text-align: center;
+    text-align: left;
     padding: 15px;
-    height: 25px;
+    height: 100px;
     position: fixed;
     bottom: 0;
     color: white;
@@ -34,7 +59,8 @@ html {
 
 #squigle {
   width: 100%;
-  bottom: 47px;
+  bottom: 130px;
+  height: 50px;
   position: fixed;
 }
 
@@ -53,9 +79,10 @@ html {
 }
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
+  padding-top: 30px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
@@ -76,4 +103,7 @@ html {
   }
 .header-right {
   float: right;
+}
+.social-media-icon-header {
+  height: 20px;
 }
