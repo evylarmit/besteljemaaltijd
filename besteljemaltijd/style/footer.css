@@ -14,3 +14,17 @@ footer {
   height: 50px;
   position: fixed;
 }
+
+#fb{
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    bottom: 35px;
+}
+
+#insta{
+    height: 30px;
+    position: absolute;
+    right: 100px;
+    bottom: 35px;
+}
