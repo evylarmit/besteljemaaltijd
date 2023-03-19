@@ -14,7 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     overflow: hidden;
-    background-color: #ffff;
+    background-color:transparent;
     padding: 5px 10px;
     padding-left: 100px;
     padding-right: 200px;
@@ -63,13 +63,40 @@ body {
       float: none;
     }
   }
+
+
+
+  svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.container {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.stack-top{
+  z-index: 9;
+  top: 63.5px;
+}
+
   .intro {
     background-image: url("img/side-view-sushi.jpg");
     height: 650px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
+    margin: 0;
+    
   }
   .inhoud {
     position: absolute;
