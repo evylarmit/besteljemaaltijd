@@ -1,0 +1,30 @@
+footer {
+    background-color: black;
+    text-align: left;
+    padding: 15px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+#squigle {
+  width: 100%;
+  bottom: 100px;
+  height: 50px;
+  position: fixed;
+}
+
+#fb{
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    bottom: 35px;
+}
+
+#insta{
+    height: 30px;
+    position: absolute;
+    right: 100px;
+    bottom: 35px;
+}
