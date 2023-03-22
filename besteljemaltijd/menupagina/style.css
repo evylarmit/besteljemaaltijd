@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Night in Tokyo;
+  src: url(fonts/NightinTokyo-Bold.ttf);
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -33,8 +38,8 @@ html {
     padding-right: 20%;
   }
   section h2 {
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: bolder;
+    font-size: 30px;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 15px;
