@@ -58,6 +58,12 @@
       float: none;
     }
     }
+    .header{
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      left: 0;
+    }
 
 body nav {
     position: sticky;
