@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bestellen.css">
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/footer.css">
+   
     <title>Sushi restaurant SHABU SHABU</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
                         <option value="Spicy Tuna Mousse">Spicy Tuna Mousse</option>
                     </select>
                         <h5 class="item4">&euro;12,50</h5>
-                        <button class="item5" id="rollsToevoegen">Toevoegen</button>
+                        <button onclick="functionRolls()" class="item5" id="rollsToevoegen">Toevoegen</button>
                 </div>
             </section>
 
@@ -59,7 +60,7 @@
                         <option value="Salmon">Salmon</option>
                     </select>
                     <h5 class="item4">&euro;9,80</h5>
-                    <button class="item5" id="monsterRollsToevoegen">Toevoegen</button>
+                    <button onclick="functionMonster()" class="item5" id="monsterRollsToevoegen">Toevoegen</button>
                 </div>
             </section>
 
@@ -72,7 +73,7 @@
                         <option value="Kappa">Kappa</option>
                     </select>
                     <h5 class="item4">&euro;5,80</h5>
-                    <button class="item5" id="veggieRollsToevoegen">Toevoegen</button>
+                    <button onclick="functionVeggie()" class="item5" id="veggieRollsToevoegen">Toevoegen</button>
                 </div>
             </section>
 
@@ -85,7 +86,7 @@
                         <option value="Spicy">Spicy</option>
                     </select>
                     <h5 class="item4">&euro;5,20</h5>
-                    <button class="item5" id="ebiToevoegen">Toevoegen</button>
+                    <button onclick="functionEbi()" class="item5" id="ebiToevoegen">Toevoegen</button>
                 </div>
             </section>
 
@@ -102,7 +103,7 @@
                         <option value="Avocado">Avocado</option>
                     </select>
                     <h5 class="item4">&euro;4,70</h5>
-                    <button class="item5" id="makiToevoegen">Toevoegen</button>
+                    <button onclick="functionMaki()" class="item5" id="makiToevoegen">Toevoegen</button>
                 </div>
             </section>
 
@@ -119,7 +120,7 @@
                         <option value="Seared Crab Leg">Seared Crab Leg</option>
                     </select>
                     <h5 class="item4">&euro;4,70</h5>
-                    <button class="item5" id="nigiriToevoegen">Toevoegen</button>
+                    <button onclick="functionNigiri()" class="item5" id="nigiriToevoegen">Toevoegen</button>
                 </div>
             </section>
 
@@ -132,7 +133,7 @@
                         <option value="Tuna">Tuna</option>
                     </select>
                     <h5 class="item4">&euro;7,50</h5>
-                    <button class="item5" id="sashimiToevoegen">Toevoegen</button>
+                    <button onclick="functionSashimi()" class="item5" id="sashimiToevoegen">Toevoegen</button>
                 </div>
             </section>
 
@@ -142,9 +143,9 @@
         <div id="sec2">
             <div id="besteloverzicht">
                 <h5>Besteloverzicht</h5>
-                <p>Voeg items toe om te bestellen.</p>
+                <p id="overzicht"></p>
 
-                <button id="afrekenen">Afrekenen</button>
+                <button onclick="afrekenen()" id="afrekenen">Afrekenen</button>
             </div>
         </div>
     </div>
@@ -161,5 +162,9 @@
         <a href="https://www.instagram.com/restaurant_shabushabu/"><img src="../img/instagramwhite.png" alt="insta" class="social-media-icon-footer" id="insta"></a>
     
     </footer>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
