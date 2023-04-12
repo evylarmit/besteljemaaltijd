@@ -1,10 +1,10 @@
 @font-face {
     font-family: Night in Tokyo;
     src: url(fonts/NightinTokyo-Bold.ttf);
-    }
-    * {box-sizing: border-box; margin: 0; padding: 0;}
-    
-    .header {
+  }
+  * {box-sizing: border-box; margin: 0; padding: 0;}
+  
+  .header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     overflow: hidden;
@@ -13,12 +13,13 @@
     padding-left: 100px;
     padding-right: 200px;
     margin-bottom: 0;
-    }
-    
-    #header-logo {
-    height: 65px;
-    }
-    .header a {
+    position: fixed;
+    width: 100%;
+  }
+  #header-logo {
+    height: 45px;
+  }
+  .header a {
     float: left;
     color: white;
     text-align: center;
@@ -27,8 +28,8 @@
     font-size: 18px; 
     line-height: 25px;
     border-radius: 4px;
-    }
-    .header-right a:after {
+  }
+  .header-right a:after {
     display: block;
     content: ""; 
     height: 3px; 
@@ -41,13 +42,16 @@
     .header-right a:focus:after {
     width: 100%;
     }
-    .header-right {
+  .header-right {
     float: right;
-    }
-    .social-media-icon-header {
-    height: 20px;
-    }
-    @media screen and (max-width: 500px) {
+  }
+  .social-media-icon-footer {
+    height: 30px;
+    float: right;
+    background-color: white;
+    margin: 5px;
+  }
+  @media screen and (max-width: 500px) {
     .header a {
       float: none;
       display: block;
@@ -57,33 +61,5 @@
     .header-right {
       float: none;
     }
-    }
-    .header{
-      position: sticky;
-      position: -webkit-sticky;
-      top: 0;
-      left: 0;
-    }
-
-body nav {
-    position: sticky;
-    top: 0;
   }
-  ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    padding: 20px;
-    background: #fff;
-  }
-  li {
-    list-style: none;
-    margin-right: 20px;
-    font-size: 25px;
-    font-weight: bold;
-  }
-  li a {
-    text-decoration: none;
-    color: #1ac;
-  }
+  

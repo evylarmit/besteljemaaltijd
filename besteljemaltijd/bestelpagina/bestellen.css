@@ -30,7 +30,7 @@ body {
   }
 #besteloverzicht{
   width: 300px;
-  height: 500px;
+  height: 480px;
   border: 5px solid black;
   position: fixed;
   margin-top: 100px;
@@ -71,4 +71,30 @@ section {
   font-size: 20px;
   font-weight: bold;
   background: #eee;
+}
+
+
+.sushi_img{
+  width: 100px;
+  border: black 1px solid;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: image; }
+.item3 { grid-area: dropdown; }
+.item4 { grid-area: price; }
+.item5 { grid-area: button; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'image image header header price price'
+    'image image dropdown dropdown button button';
+  gap: 100px;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.item3{
+  width: 300px;
 }

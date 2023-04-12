@@ -5,49 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bestellen.css">
-    <link rel="stylesheet" href="/besteljemaltijd/style/navbar.css">
-    <link rel="stylesheet" href="/besteljemaltijd/style/footer.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
+   
     <title>Sushi restaurant SHABU SHABU</title>
 </head>
 <body>
     
     <div class="header">
-        <a href="/besteljemaltijd/index.html" class="logo"><img src="/besteljemaltijd/img/shabu-logo-darkbg.png" alt="shabu-logo" id="header-logo"></a>
+        <a href="../index.html" class="logo"><img src="../img/shabu-logo-darkbg.png" alt="shabu-logo" id="header-logo"></a>
         <div class="header-right">
-        <a class="active" href="/besteljemaltijd/index.html">HOME</a>
-        <a href="/besteljemaltijd/menupagina/index.html">MENU</a>
-        <a href="/besteljemaltijd/bestelpagina/bestellen.html">BESTELLEN</a>
-        <a href="#about">INFO</a>
+        <a class="active" href="../index.html">HOME</a>
+        <a href="../menupagina/index.html">MENU</a>
+        <a href="bestellen.html">BESTELLEN</a>
+        <a href="../infopagina/info pagina.html">INFO</a>
         
         </div>
-  </div>
+    </div>
+    
     <div id="container"> 
 
         <div id="sec1">
-            <section id="first">First Section</section>
-            <section id="second">Second Section</section>
-            <section id="third">Third Section</section>
-            <section id="forth">Forth Section</section>
-            <section id="fifth">Fifth Section</section>
-            <section id="sixth">Sixth Section</section>
-            <section id="seventh">Seventh Section</section>
-            <section id="eighth">Eighth Section</section>
-            <section id="ninth">Ninth Section</section>
-            <section id="tenth">Tenth Section</section>
+            <section id="first">
+                <div class="grid-container">
+                    <h3 class="item1">Rolls (8st.)</h3>
+                    <img src="../img/bestel/roll_unagi.png" class="sushi_img item2" alt="">
+                    <select class="item3" name="flavors" id="rollsflavors">
+                        <option value="Unagi">Unagi</option>
+                        <option value="Salmon Surimi">Salmon Surimi</option>
+                        <option value="Double Salmon">Double Salmon</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Valcano">Valcano</option>
+                        <option value="Spicy Salmon">Spicy Salmon</option>
+                        <option value="California Salmon">California Salmon</option>
+                        <option value="Salmon Mousse">Salmon Mousse</option>
+                        <option value="Crunchy Roll">Crunchy Roll</option>
+                        <option value="California">California</option>
+                        <option value="Crispy Chicken">Crispy Chicken</option>
+                        <option value="Spicy Chicken">Spicy Chicken</option>
+                        <option value="Spicy Tuna Mousse">Spicy Tuna Mousse</option>
+                    </select>
+                        <h5 class="item4">&euro;12,50</h5>
+                        <button onclick="functionRolls()" class="item5" id="rollsToevoegen">Toevoegen</button>
+                </div>
+            </section>
+
+            <section id="second">
+                <div class="grid-container">
+                    <h3 class="item1">Monster rolls (6st.)</h3>
+                    <img src="../img/bestel/monster_chicken.png" class="sushi_img item2" alt="">
+                    <select class="item3" name="flavors" id="monsterrollsflavors">
+                        <option value="Chicken">Chicken</option>
+                        <option value="Ebi">Ebi</option>
+                        <option value="Salmon">Salmon</option>
+                    </select>
+                    <h5 class="item4">&euro;9,80</h5>
+                    <button onclick="functionMonster()" class="item5" id="monsterRollsToevoegen">Toevoegen</button>
+                </div>
+            </section>
+
+            <section id="third">
+                <div class="grid-container">
+                    <h3 class="item1">Veggie Rolls</h3>
+                    <img src="../img/bestel/veggie_kappa.png" class="sushi_img item2" alt="">
+                    <select class="item3" name="flavors" id="veggierollsflavors">
+                        <option value="Tamago">Tamago</option>
+                        <option value="Kappa">Kappa</option>
+                    </select>
+                    <h5 class="item4">&euro;5,80</h5>
+                    <button onclick="functionVeggie()" class="item5" id="veggieRollsToevoegen">Toevoegen</button>
+                </div>
+            </section>
+
+            <section id="forth">
+                <div class="grid-container">
+                    <h3 class="item1">Ebi</h3>
+                    <img src="../img/bestel/ebi_crispy.png" class="sushi_img item2" alt="">
+                    <select class="item3" name="flavors" id="ebiflavors">
+                        <option value="Crispy">Crispy</option>
+                        <option value="Spicy">Spicy</option>
+                    </select>
+                    <h5 class="item4">&euro;5,20</h5>
+                    <button onclick="functionEbi()" class="item5" id="ebiToevoegen">Toevoegen</button>
+                </div>
+            </section>
+
+            <section id="fifth">
+                <div class="grid-container">
+                    <h3 class="item1">Maki (6st.)</h3>
+                    <img src="../img/bestel/maki_salmon.png" class="sushi_img item2" alt="">
+                    <select class="item3" name="flavors" id="makiflavors">
+                        <option value="Salmon">Salmon</option>
+                        <option value="Tuna">Tuna</option>
+                        <option value="Surimi">Surimi</option>
+                        <option value="Kappa">Kappa</option>
+                        <option value="Tamago">Tamago</option>
+                        <option value="Avocado">Avocado</option>
+                    </select>
+                    <h5 class="item4">&euro;4,70</h5>
+                    <button onclick="functionMaki()" class="item5" id="makiToevoegen">Toevoegen</button>
+                </div>
+            </section>
+
+            <section id="sixth">
+                <div class="grid-container">
+                    <h3 class="item1" >Nigiri (2st.)</h3>
+                    <img src="../img/bestel/nigiri_salmon.png" class="sushi_img item2" alt="">
+                    <select class="item3" name="flavors" id="nigiriflavors">
+                        <option value="Salmon">Salmon</option>
+                        <option value="Tuna">Tuna</option>
+                        <option value="Unagi">Unagi</option>
+                        <option value="Sweet Tamago">Sweet Tamago</option>
+                        <option value="Seared Salmon">Seared Salmon</option>
+                        <option value="Seared Crab Leg">Seared Crab Leg</option>
+                    </select>
+                    <h5 class="item4">&euro;4,70</h5>
+                    <button onclick="functionNigiri()" class="item5" id="nigiriToevoegen">Toevoegen</button>
+                </div>
+            </section>
+
+            <section id="seventh">
+                <div class="grid-container">
+                    <h3 class="item" >Sashimi (5st.)</h3>
+                    <img src="../img/bestel/sashimi_salmon.png" class="sushi_img item2" alt="">
+                    <select class="item3" name="flavors" id="sashimiflavors">
+                        <option value="Salmon">Salmon</option>
+                        <option value="Tuna">Tuna</option>
+                    </select>
+                    <h5 class="item4">&euro;7,50</h5>
+                    <button onclick="functionSashimi()" class="item5" id="sashimiToevoegen">Toevoegen</button>
+                </div>
+            </section>
+
             <section id="eleventh">Empty boi</section>
         </div>
 
         <div id="sec2">
             <div id="besteloverzicht">
                 <h5>Besteloverzicht</h5>
-                <p>Voeg items toe om te bestellen.</p>
+                <p id="overzicht"></p>
 
-                <button id="afrekenen">Afrekenen</button>
+                <button onclick="afrekenen()" id="afrekenen">Afrekenen</button>
             </div>
         </div>
     </div>
 
-    <img src="/besteljemaltijd/img/shabu-footer-squigle.png" alt="squigle" id="squigle">
+    <img src="../img/shabu-footer-squigle.png" alt="squigle" id="squigle">
     <footer>
         <h3>Contact</h3>
         <p>Telefoon: 010 411 6533
@@ -55,9 +158,13 @@
             Adres: Weltblaak 82 3012 KM Rotterdam
         </p>
 
-        <a href="https://www.facebook.com/shabushabu.nl"><img src="/besteljemaltijd/img/facebookwhite.png" alt="fb" class="social-media-icon-footer" id="fb"></a>
-        <a href="https://www.instagram.com/restaurant_shabushabu/"><img src="/besteljemaltijd/img/instagramwhite.png" alt="insta" class="social-media-icon-footer" id="insta"></a>
+        <a href="https://www.facebook.com/shabushabu.nl"><img src="../img/facebookwhite.png" alt="fb" class="social-media-icon-footer" id="fb"></a>
+        <a href="https://www.instagram.com/restaurant_shabushabu/"><img src="../img/instagramwhite.png" alt="insta" class="social-media-icon-footer" id="insta"></a>
     
     </footer>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
