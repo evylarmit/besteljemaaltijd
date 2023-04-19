@@ -177,14 +177,11 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#wave-hr {
-  width: 100%;
-  height: 50%;
-}
+
 .column {
-  margin-top: 30px;
+  margin-top: 0px;
   float: left;
-  width: 50%;
+  width: 45%;
   height: 300px;
   padding-left: 15%;
 }
@@ -192,7 +189,9 @@ body {
 
   font-family: night in Tokyo;
   color: rgb(255, 183, 0);
-
+}
+.column p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .row:after {
   content: "";
@@ -208,4 +207,35 @@ body {
   padding: 12px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#wave-hr {
+  opacity: 0;
+}
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  text-align: left;
+  padding: 15px;
+  height: 120px;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  margin: 0;
+}
+#squigle {
+width: 100%;
+bottom: 100px;
+height: 50px;
+position: fixed;
+}
+#fb{
+  float: right;
+  height: 30px;
+}
+
+#insta{
+  float: right;
+  height: 30px;
+
 }
